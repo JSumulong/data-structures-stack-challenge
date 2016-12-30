@@ -35,5 +35,24 @@ describe Stack do
 				expect(stack.pop).to eq 'new_element3'
 			end		
 		end
+
+		describe '#top' do 
+
+			it 'returns the last element' do 
+				expect(stack.top).to eq 'new_element3'
+			end
+		end
+	end
+
+	describe '#empty?' do 
+
+		it 'returns true if empty' do 
+			expect(stack.empty?).to eq true
+		end
+
+		it 'returns false if not empty' do
+			stack.push('some_element')
+			expect(stack.empty?).to eq false
+		end
 	end
 end

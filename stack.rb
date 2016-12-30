@@ -41,9 +41,11 @@ class Stack
 	end
 
 	def top
+		contents.get(contents.size - 1)
 	end
 
 	def empty?
+		contents.size == 1 && contents.get(0) == nil
 	end
 
 	private
