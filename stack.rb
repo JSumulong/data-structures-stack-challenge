@@ -41,6 +41,7 @@ class Stack
 	end
 
 	def top
+		contents.get(contents.size - 1)
 	end
 
 	def empty?

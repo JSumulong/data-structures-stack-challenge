@@ -35,5 +35,13 @@ describe Stack do
 				expect(stack.pop).to eq 'new_element3'
 			end		
 		end
+
+		describe '#top' do 
+
+			it 'returns the last element' do 
+				expect(stack.top).to eq 'new_element3'
+			end
+		end
+
 	end
 end
