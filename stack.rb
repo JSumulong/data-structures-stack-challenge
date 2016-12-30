@@ -47,7 +47,5 @@ class Stack
 	def empty?
 		contents.size == 1 && contents.get(0) == nil
 	end
-
-	private
-
+	
 end
